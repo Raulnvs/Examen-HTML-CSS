@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+main{
+    font-family: "Quicksand", sans-serif;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+}
+header {
+    color:white;
+    background-color: #333;
+    
+}
+
+
+#titulo{
+    padding: 28px;
+    margin: auto;
+    font-size: 2em;
+    height: 6rem;
+}
+#hola{
+    font-size: 8em;
+}
+#texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 25px;
+}
+#hider{
+    display: flex;
+    margin: 15px;
+    justify-content: space-between;
+    padding:15px;
+    height: 50vh;
+    
+}
+#hider{
+    background-image: url("001.jpg");
+    background-position: 100px;
+    background-position-x: center;
+    position: relative;
+}
+
+@media screen and (min-width:992px) {
+  
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+      
+    }
+    .galeria img {
+        margin: 0px;
+        width: 20rem;
+       height: 15rem;
+        padding: 15px;
+    }
+    
+    #foto-dos:nth-of-type(1){
+        grid-row: 1;
+        grid-column: 1;
+    
+    }
+    #foto-tres:nth-of-type(2){
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #foto-cuatro:nth-of-type(3){
+        grid-row: 1;
+        grid-column: 3;
+    }
+    #foto-cinco:nth-of-type(4){
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #foto-seis:nth-of-type(5){
+        grid-row: 2;
+        grid-column: 2;
+    }
+    #foto-siete:nth-last-of-type(6){
+        grid-column: 3;
+        grid-row: 2;
+    }
+    
+
+    
+}
+
+@media screen and (min-width:576px) {
+  
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+      
+    }
+    .galeria img {
+        margin: 0px;
+        width: 20rem;
+       height: 15rem;
+        padding: 15px;
+    }
+    
+    #foto-dos:nth-of-type(1){
+        grid-row: 1;
+        grid-column: 1;
+    
+    }
+    #foto-tres:nth-of-type(2){
+        grid-column: 2;
+        grid-row: 1;
+    }
+    #foto-cuatro:nth-of-type(3){
+        grid-row: 2;
+        grid-column: 1;
+    }
+    #foto-cinco:nth-of-type(4){
+        grid-row: 2;
+        grid-column: 2;
+    }
+    #foto-seis:nth-of-type(5){
+        grid-row: 3;
+        grid-column: 1;
+    }
+    #foto-siete:nth-last-of-type(6){
+        grid-column: 2;
+        grid-row: 3;
+    }
+    
+
+    
+}
+
+@media only screen and (min-width: 472px) {
+
+    nav {
+       	display: flex;
+        justify-content: center;
+		align-items: center;
+        
+    }
+    .galeria {
+        display: grid;
+       
+    }
+    .galeria img {
+        margin: 0px;
+        width: 100%;
+        padding: 2%;
+    }
+
+}
